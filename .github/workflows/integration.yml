@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/epitech/epitest-docker:latest
-    need: [compile, coding-style]
+    needs: [compile, coding-style]
     steps:
 
       - name: Checkout Repository
